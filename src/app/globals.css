@@ -1,0 +1,211 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+.bgsvg{
+  background-color: var(--token-5e82b7fb-875b-478b-b151-baffd23609a0, rgba(255, 255, 255, .2));
+  border-radius: 7px;
+  padding: 5px;
+}
+.gradientcolor{
+  background-color: #512feb80;
+    border-radius: 231px;
+    filter: blur(50px);
+    flex: none;
+    height: 100px;
+    overflow: hidden;
+    position: absolute;
+    right: -11px;
+    top: -11px;
+    width: 100px;
+    will-change: var(--framer-will-change-override, transform);
+    z-index: 1;
+}
+.gradientcolor2{
+  background-color: #512feb80;
+    border-radius: 346px;
+    filter: blur(80px);
+    flex: none;
+    height: 100px;
+    overflow: hidden;
+    position: absolute;
+    right: 300px;
+    top: -11px;
+    width: 100px;
+    will-change: var(--framer-will-change-override, transform);
+    z-index: 1;
+}
+.bgray{
+  background-color: var(--token-5e82b7fb-875b-478b-b151-baffd23609a0, rgba(255, 255, 255, 0.2));
+}
+.testimonialimage img{
+  background-color: var(--token-5e82b7fb-875b-478b-b151-baffd23609a0, #fff3);
+    padding: 2px;
+    border-radius: 7px;
+    width: 35px;
+    height: 34px;
+    object-fit: cover;
+    object-position: top;
+}
+/* In your global.css */
+.image-rendering-pixelated {
+  image-rendering: pixelated;
+}
+
+.background-element {
+  image-rendering: pixelated;
+  flex-shrink: 0;
+  background-size: 100% 100%;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 923 328'%3E%3Cpath d='M 459 0 C 712.499 0 918 27.534 918 61.5 C 918 95.466 712.499 123 459 123 C 205.501 123 0 95.466 0 61.5 C 0 27.534 205.501 0 459 0 Z' transform='translate(2.421 102.599) rotate(-13 459 61.5)' fill='rgba(81, 47, 235, 0.5)'%3E%3C/path%3E%3C/svg%3E");
+  opacity: 1;
+  
+}
+.color-gray{
+  color: rgb(255 255 255 / 70%);
+}
+
+
+
+    @keyframes marquee {
+      from {
+        transform: translateX(0);
+      }
+      to {
+        transform: translateX(-50%);
+      }
+    }
+
+    
+
+.animate-marquee {
+  display: flex;
+  min-width: 200%;
+  animation: marquee 18s linear infinite;
+}
+
+
+.futurebackground{
+  --border-bottom-width: 1px; 
+  --border-left-width: 1px;
+  --border-right-width: 1px;
+  --border-style: solid;
+  --border-top-width: 1px;
+  backdrop-filter: blur(10px);
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  border: rgba(255, 255, 255, 0.1) 1px solid;
+  opacity: 1;
+}
+
+.futurebackground2{
+  --border-bottom-width: 1px;
+  --border-left-width: 1px;
+  --border-right-width: 1px;
+  --border-style: solid;
+  --border-top-width: 1px;
+  backdrop-filter: blur(10px);
+  border-radius: 8px;
+  border: rgba(255, 255, 255, 0.1) 1px solid;
+  opacity: 1;
+  background-color: var(--token-729f323b-4a85-474f-8f3a-c5c840127090, rgb(13, 13, 13));
+}
+.futurebackground3{
+  --border-bottom-width: 1px;
+  --border-left-width: 1px;
+  --border-right-width: 1px;
+  --border-style: solid;
+  --border-top-width: 1px;
+  backdrop-filter: blur(10px);
+  border-radius: 8px;
+  border: rgba(255, 255, 255, 0.1) 1px solid;
+  opacity: 1;
+  background-color: #512feb;
+}
+.futurebackground4{
+  --border-bottom-width: 1px; 
+  --border-left-width: 1px;
+  --border-right-width: 1px;
+  --border-style: solid;
+  --border-top-width: 1px;
+  backdrop-filter: blur(10px);
+  border-radius: 8px;
+  border: rgba(255, 255, 255, 0.1) 1px solid;
+  opacity: 1;
+  background-color: var(--token-729f323b-4a85-474f-8f3a-c5c840127090, rgb(13, 13, 13));
+}
+
+.futurebackground5{
+  --border-bottom-width: 1px;
+  --border-left-width: 1px;
+  --border-right-width: 1px;
+  --border-style: solid;
+  --border-top-width: 1px;
+  backdrop-filter: blur(10px);
+  border-radius: 35px;
+  border: rgba(255, 255, 255, 0.1) 1px solid;
+  opacity: 1;
+  background-color: var(--token-c9fc1380-5d14-49ab-960e-cc3a53f6f2d0, rgba(255, 255, 255, .06));
+}
+.futurebackground6{
+  --border-bottom-width: 1px;
+  --border-left-width: 1px;
+  --border-right-width: 1px;
+  --border-style: solid;
+  --border-top-width: 1px;
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  border: rgba(255, 255, 255, 0.1) 1px solid;
+  opacity: 1;
+  background-color: var(--token-c9fc1380-5d14-49ab-960e-cc3a53f6f2d0, rgba(255, 255, 255, .06));
+}
+.futurebackground7{
+  --border-bottom-width: 1px; 
+  --border-left-width: 1px;
+  --border-right-width: 1px;
+  --border-style: solid;
+  --border-top-width: 1px;
+  backdrop-filter: blur(10px);
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 25px;
+  border: rgba(255, 255, 255, 0.1) 1px solid;
+  opacity: 1;
+  background: linear-gradient(149deg, rgba(81, 47, 235, 0.15) 0%, rgba(255, 255, 255, 0.06) 29%, rgba(255, 255, 255, 0.06) 74%, rgba(81, 47, 235, 0.15) 100%);
+}
+.futurebackground8{
+  --border-bottom-width: 1px;
+  --border-left-width: 1px;
+  --border-right-width: 1px;
+  --border-style: solid;
+  --border-top-width: 1px;
+  backdrop-filter: blur(10px);
+  border-radius: 8px;
+  border: rgba(255, 255, 255, 0.1) 1px solid;
+  opacity: 1;
+  background-color: var(--token-729f323b-4a85-474f-8f3a-c5c840127090, rgb(13, 13, 13));
+}
+
+/* button animations */
