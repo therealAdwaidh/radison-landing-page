@@ -3,6 +3,10 @@ import { useState, useEffect } from "react";
 import { SignInButton,UserButton,SignedIn,SignedOut } from "@clerk/nextjs";
 import { usePathname } from "next/navigation";
 
+export const navigation =()=>{
+  const pathname=usePathname();
+}
+
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   
