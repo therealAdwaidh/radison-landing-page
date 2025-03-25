@@ -1,5 +1,7 @@
 "use client"
 import { useState, useEffect } from "react";
+import { SignInButton,UserButton,SignedIn,SignedOut } from "@clerk/nextjs";
+import { usePathname } from "next/navigation";
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -56,8 +58,8 @@ export default function Navbar() {
               
               <div className="hidden md:flex space-x-6">
                 <a
-                  href="#"
-                  className="text-gray-300 hover:text-white px-3 py-2 text-sm font-medium"
+                  href="/category"
+                  className={ "text-gray-300 hover:text-white px-3 py-2 text-sm font-medium"}
                 >
                   Process
                 </a>
@@ -85,6 +87,18 @@ export default function Navbar() {
                 >
                   Contact
                 </a>
+
+                <SignedOut>
+                   <SignInButton mode="modal"/>
+                </SignedOut>
+                
+                <SignedIn>
+                    <UserButton/>
+                
+                </SignedIn>
+               
+                
+              
               </div>
               
               <div className="hidden md:block">
